@@ -1,53 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Meu Formulário</h1>
-    <form action="" method="POST" enctype="multipart/form-data"></form>
-        <div>
-            <label for="">Nome</label>
-            <input type="text" placeholder="Digite seu nome aqui" required="required" name="nome">
+    <div id="container">
+        <div id="form">
+            <h1>Meu Formulário</h1>
+            <form action="" method="POST" enctype="multipart/form-data" accept-charset="UTF-8">
+                <div>
+                    <label>CPF:</label>
+                    <input type="text" placeholder="Digite seu CPF aqui" required="required" name="CPF" autofocus>
+                </div>
+                <div>
+                    <label>Nome:</label>
+                    <input type="text" placeholder="Digite seu nome aqui" required="required" name="nome">
+                </div>
+                <div>
+                    <label>E-mail</label>
+                    <input type="email" placeholder="Digite seu e-mail aqui" required="required" name="email">
+                </div>
+                <div>
+                    <label>Senha</label>
+                    <input type="password" name="senha" required="required" placeholder="Digite sua senha aqui">
+                </div>
+                <div>
+                    <label>Telefone:</label>
+                    <input type="text" placeholder="Digite seu telefone aqui" required="required" name="tel">
+                </div>
+                <div>
+                    <label>Data de Nascimento</label>
+                    <input type="date" name="data">
+                </div>
+                <div>
+                    <label>Selecione seu sexo:</label>
+                    <label for="sexo1"><input type="radio" id="sexo1" name="sexo" value="m">Masculino</label>
+                    <label for="sexo2"><input type="radio" id="sexo2" name="sexo" value="f">Feminino</label>
+                    <label for="sexo3"><input type="radio" id="sexo3" name="sexo" value="t">Trans</label>
+                </div>
+                <div>
+                    <label>Cidade</label>
+                    <select required="required" name="cidade">
+                        <option value="1">Selecione</option>
+                        <option value="2">São Paulo</option>
+                        <option value="3">Rio de Janeiro</option>
+                        <option value="4">Belo Horizonte</option>
+                        <option value="5">Curitiba</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Foto de Perfil</label>
+                    <input type="file" name="foto" required="required">
+                </div>
+                <div>
+                    <label>Biografia</label><br>
+                    <textarea name="biografia" cols="40" rows="2" placeholder="Digite sua biografia aqui" required="required"></textarea>
+                </div>
+                <div>
+                    <label for="humano"><input type="checkbox" name="humano" id="h">Eu sou humano</label>
+                </div>
+                <button type="submit" name="enviar">Enviar</button>
+            </form>
         </div>
-
-        <div>
-            <label for="">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail aqui" required="required" name="email">
-        </div>
-        <div>
-            <label for="">Senha</label>
-            <input type="password" name="senha" required="required" placeholder="Digite sua senha aqui">
-        </div>
-        <div>
-            <p>Selecione seu sexo:</p>
-            <label for="sexo1"><input type="radio" id="sexo1" name="sexo" value="m">Masculino</label>
-            <label for="sexo2"><input type="radio" id="sexo2" name="sexo" value="f">Feminino</label>
-            <label for="sexo3"><input type="radio" id="sexo3" name="sexo" value="t">Trans</label>
-        </div>
-        <div>
-            <label for="">Cidade</label>
-            <select required="required" name="cidade">
-                <option value="1">Selecione</option>
-                <option value="2">São Paulo</option>
-                <option value="3">Rio de Janeiro</option>
-                <option value="4">Belo Horizonte</option>
-                <option value="5">Curitiba</option>
-            </select>
-        </div>
-        <div>
-            <label for="">Foto de Perfil</label>
-            <input type="file" name="foto" required="required">
-        </div>
-        <div>
-            <label for="">Biografia</label><br>
-            <textarea name="biografia" cols="30" rows="5" placeholder="Digite sua biografia aqui" required="required"></textarea>
-        </div>
-        <div>
-            <label for="humano"><input type="checkbox" name="humano" id="humano">Eu sou humano</label>
-        </div>
-        <button type="submit" name="enviar" value="1">Enviar</button>
+    </div>
 </body>
 </html>

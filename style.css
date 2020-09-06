@@ -1,0 +1,27 @@
+body{
+    background-color: cornflowerblue;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+#form{
+    padding: 0.5em;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+input, select{
+    margin-bottom: 20px;
+}
