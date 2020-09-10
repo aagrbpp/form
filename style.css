@@ -1,16 +1,35 @@
 body{
-    background-color: cornflowerblue;
+    background-color: black;
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#container{
+.background-image{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(background.jpg);
+    position: relative;
+    filter: blur(7px);
+    -webkit-filter: blur(10px);
+    /*Plano de fundo responsivo*/
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#centralize{
+    /*Centralizar a div*/
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*Sobrepor ao .background-image*/
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 h1{
@@ -18,10 +37,13 @@ h1{
 }
 
 #form{
+    border-radius: 2px;
+    color: white;
     padding: 0.5em;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgb(50, 50, 50, 0.8);
+    box-shadow: 10px 10px 30px black;
 }
 
 input, select{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
