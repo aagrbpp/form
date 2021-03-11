@@ -44,6 +44,10 @@ h1{
     box-shadow: 10px 10px 30px black;
 }
 
+input{
+    outline: 0;
+}
+
 input, select{
     margin-bottom: 10px;
 }
